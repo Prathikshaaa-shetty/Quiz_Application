@@ -96,7 +96,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "Application/node_modules/bootstrap/dist/js/bootstrap.min.js"
+
+            ]
           }
         }
       }

@@ -1,0 +1,32 @@
+<div class="container-1">
+  <div class="container-2">
+    <div class="box-2">
+      <p class="head">My Quiz Problem</p>
+    </div>
+    <div class="container-3">
+      <div class="icons">
+        <img src="../../../../assets/images/Vector.png" class="img-1" />
+      </div>
+      <p class="register">Register Name</p>
+      <div class="container-4">
+        <div class="box-3">
+          <input
+            style="
+              border-top-style: hidden;
+              border-right-style: hidden;
+              border-left-style: hidden;
+            "
+            type="text"
+            name="name"
+            id=""
+            onfocus="this.value=''"
+            class="enter-name"
+            placeholder="Enter Name"
+            [(ngModel)]="name"
+          />
+        </div>
+      </div>
+      <p class="start-now" id="start" (click)="onBegin()">Start Now</p>
+    </div>
+  </div>
+</div>

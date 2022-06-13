@@ -1,0 +1,174 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <img
+    style="border: radius 50%"
+    src="https://images.squarespace-cdn.com/content/v1/553e3414e4b0f714a50c6ec9/1430140106305-BFK4SYXRCMSSWZUHQ0H8/Happiness+Makers+Logo-02.png?format=1500w"
+    width="60"
+    height="60"
+  />
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarsExampleDefault"
+    aria-controls="navbarsExampleDefault"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home">Home </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/addquestion">Add Question</a>
+      </li>
+    </ul>
+    <div class="form-inline my-2 my-lg-0">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                class="btn btn-outline-success my-2 my-sm-0"
+                >Menu <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="btn" routerLink="/quiz">QuizApp</a>
+                </li>
+                <li >
+                  <a class="btn"routerLink="/profile">Profile</a>
+                </li>
+                <li >
+                  <a class="btn"  (click)="logout()">Logout</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+      <br/>
+      <br/>
+    </div>
+  </div>
+</nav>
+
+<br /><br />
+<div style="background-image: url(https://images.ctfassets.net/co0pvta7hzrh/3mJC611YWiWAiVMo1ruGRm/af06217d4952cb82dcd5048b73e7e284/SpellingQuizThumb.png?q=80&fl=progressive&fit=scale&w=300);">
+
+
+  <main role="main" class="container">
+    <div class="starter-template">
+      <br /><br /><br />
+      <div class="column" *ngFor="let question of questionsList; let i = index">
+        <br />
+        <div class="panel panel-primary">
+          <div class="row col-md-10">
+            <p class="lead panel-heading">
+              Questions {{ i + 1 }} of {{ questionsList.length }} :
+            </p>
+            <div class="col-md-10 panel-heading">
+              <h5 class="panel-title">
+                {{ question.question }}
+              </h5>
+            </div>
+          </div>
+          <br />
+          <div class="panel-body col-md-10 row">
+            <div class="radio col-md-12">
+              <label>
+                <input
+                  type="radio"
+                  name="a{{ i }}"
+                  id="a{{ i }}"
+                  [value]="question.a"
+                  (change)="onSelectOption(i, 'a')"
+                />
+                {{ question.a }}
+              </label>
+            </div>
+          </div>
+          <div class="panel-body col-md-10 row">
+            <div class="radio col-md-12">
+              <label>
+                <input
+                  type="radio"
+                  name="b{{ i }}"
+                  id="b{{ i }}"
+                  [value]="question.b"
+                  (change)="onSelectOption(i, 'b')"
+                />
+                {{ question.b }}
+              </label>
+            </div>
+          </div>
+  
+          <div class="panel-body col-md-10 row">
+            <div class="radio col-md-12">
+              <label>
+                <input
+                  type="radio"
+                  name="c{{ i }}"
+                  id="c{{ i }}"
+                  [value]="question.c"
+                  (change)="onSelectOption(i, 'c')"
+                />
+                {{ question.c }}
+              </label>
+            </div>
+          </div>
+  
+          <div class="panel-body col-md-10 row">
+            <div class="radio col-md-12">
+              <label>
+                <input
+                  type="radio"
+                  name="d{{ i }}"
+                  id="d{{ i }}"
+                  [value]="question.d"
+                  (change)="onSelectOption(i, 'd')"
+                />
+                {{ question.d }}
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1 column">
+          <button
+            (click)="handleUpdate(question.id)"
+            class="btn btn-dark btn-rounded"
+          >
+            Edit
+          </button>
+          <br /><br />
+          <button (click)="handleDelete(i)" class="btn btn-dark btn-rounded">
+            Delete
+          </button>
+        </div>
+        <hr class="solid" />
+      </div>
+  
+      <!-- <div class="center" *ngIf="questionsList.length > 0" (click)="SubmitAnswers()">
+        <button>Submit Answers</button>
+      </div> -->
+      <div class="center" *ngIf="questionsList && questionsList.length < 1" (click)="SubmitAnswers()">
+        <h3>No questions found!!</h3>
+      </div>
+    </div>
+    <br />
+  </main>
+</div>
+

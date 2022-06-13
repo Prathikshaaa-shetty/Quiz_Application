@@ -1,0 +1,162 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <img
+    style="border: radius 50%"
+    src="https://images.squarespace-cdn.com/content/v1/553e3414e4b0f714a50c6ec9/1430140106305-BFK4SYXRCMSSWZUHQ0H8/Happiness+Makers+Logo-02.png?format=1500w"
+    width="60"
+    height="60"
+  />
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarsExampleDefault"
+    aria-controls="navbarsExampleDefault"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/dashboard">Dashboard</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" routerLink="/addquestion">Add Question</a>
+      </li> -->
+    </ul>
+    <div class="form-inline my-2 my-lg-0">
+      <button
+        (click)="onClickProfile()"
+        class="btn btn-outline-success my-2 my-sm-0"
+      >
+        Profile
+      </button>
+    </div>
+  </div>
+</nav>
+
+<br/><br/><br/>
+<div style="background-image: url(https://images.ctfassets.net/co0pvta7hzrh/3mJC611YWiWAiVMo1ruGRm/af06217d4952cb82dcd5048b73e7e284/SpellingQuizThumb.png?q=80&fl=progressive&fit=scale&w=300);">
+
+
+  <main role="main" class="container">
+    <div class="starter-template">
+      <br /><br /><br />
+      <div class="container-fluid px-1 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+            <h3>{{ !isEdit ? "Add" : "Edit" }} question</h3>
+            <div class="card">
+              <form
+                class="form-card"
+                [formGroup]="questionForm"
+                (ngSubmit)="onAddQuestion()"
+              >
+                <div class="row justify-content-between text-left">
+                  <div class="form-group col-12 flex-column d-flex">
+                    <label class="form-control-label px-3"
+                      >Question<span class="text-danger"> *</span></label
+                    >
+                    <input
+                      type="text"
+                      title="question"
+                      id="question"
+                      name="question"
+                      formControlName="question"
+                      placeholder="question"
+                    />
+                  </div>
+                </div>
+                <div class="row justify-content-between text-left">
+                  <div class="form-group col-sm-6 flex-column d-flex">
+                    <label class="form-control-label px-3"
+                      >Option A<span class="text-danger"> *</span></label
+                    >
+                    <input
+                      type="text"
+                      title="a"
+                      name="a"
+                      id="a"
+                      formControlName="a"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="form-group col-sm-6 flex-column d-flex">
+                    <label class="form-control-label px-3"
+                      >Option B<span class="text-danger"> *</span></label
+                    >
+                    <input
+                      type="text"
+                      title="b"
+                      name="b"
+                      id="b"
+                      formControlName="b"
+                      placeholder=""
+                    />
+                  </div>
+                </div>
+                <div class="row justify-content-between text-left">
+                  <div class="form-group col-sm-6 flex-column d-flex">
+                    <label class="form-control-label px-3"
+                      >Option C<span class="text-danger"> *</span></label
+                    >
+                    <input
+                      type="text"
+                      title="c"
+                      name="c"
+                      id="c"
+                      formControlName="c"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="form-group col-sm-6 flex-column d-flex">
+                    <label class="form-control-label px-3"
+                      >Option D<span class="text-danger"> *</span></label
+                    >
+                    <input
+                      type="text"
+                      title="d"
+                      name="d"
+                      id="d"
+                      formControlName="d"
+                      placeholder=""
+                    />
+                  </div>
+                </div>
+                <div class="form-group col-sm-6 flex-column d-flex">
+                  <label class="form-control-label px-3"
+                    >Correct<span class="text-danger"> *</span></label
+                  >
+                  <input
+                    type="text"
+                    title="correct"
+                    name="correct"
+                    id="correct"
+                    formControlName="correct"
+                    placeholder=""
+                  />
+                </div>
+                <div class="row justify-content-end">
+                  <div class="form-group col-sm-6">
+                    <button type="submit" class="btn-block btn-primary">
+                      {{ !isEdit ? "Add" : "Update" }} Question
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <br/><br/><br/>
+  
+</div>

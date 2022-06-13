@@ -1,0 +1,84 @@
+<div>
+  <div class="quiz-page">
+    <div class="quizQ">
+      <h3 class="hedQ" style="font-size: 30px">My Quiz Problem in Angular</h3>
+      <hr
+        class="line"
+        style="margin-top: 54px; margin-left: 1px; margin-right: 5px"
+      />
+    </div>
+  </div>
+
+  <div class="user-data">
+    <h3 class="user-info"></h3>
+    <h3 class="question-info"></h3>
+  </div>
+
+  <div class="quiz-container" id="quiz">
+    <div class="quiz-header">
+      <h4 id="question">{{ selectedQuiz.question }}</h4>
+      <ul>
+        <li>
+          <input
+            type="radio"
+            name="answer"
+            id="a"
+            class="answer"
+            [value]="selectedQuiz.a"
+            (click)="onSelectAns('a')"
+            [disabled]="isDisable"
+          />
+          <label for="a" id="option1">{{ selectedQuiz.a }}</label>
+        </li>
+
+        <li>
+          <input
+            type="radio"
+            name="answer"
+            id="b"
+            class="answer"
+            [value]="selectedQuiz.b"
+            (click)="onSelectAns('b')"
+            [disabled]="isDisable"
+          />
+          <label for="b" id="option2">{{ selectedQuiz.b }}</label>
+        </li>
+
+        <li>
+          <input
+            type="radio"
+            name="answer"
+            id="c"
+            class="answer"
+            [value]="selectedQuiz.c"
+            (click)="onSelectAns('c')"
+            [disabled]="isDisable"
+          />
+          <label for="c" id="option3">{{ selectedQuiz.c }}</label>
+        </li>
+
+        <li>
+          <input
+            type="radio"
+            name="answer"
+            id="d"
+            class="answer"
+            [value]="selectedQuiz.d"
+            (click)="onSelectAns('d')"
+            [disabled]="isDisable"
+          />
+          <label for="d" id="option4">{{ selectedQuiz.d }}</label>
+        </li>
+      </ul>
+      <button id="submit" (click)="onSubmit()" [disabled]="!showSubmitButton">
+        Submit
+      </button>
+      <button id="next" (click)="onNext()" [disabled]="!showNextButton">
+        Next
+      </button>
+    </div>
+  </div>
+
+  <hr class="quizLine" style="font-weight: bold" />
+  <p class="correct-ans" style="font-weight: bold">{{ this.displayMessage }}</p>
+</div>

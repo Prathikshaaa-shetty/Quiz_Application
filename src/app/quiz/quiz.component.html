@@ -1,0 +1,15 @@
+<div class="box">
+  <app-register
+    *ngIf="showRegister"
+    (onRegister)="handleRegister($event)"
+  ></app-register>
+  <app-quiz-page
+    *ngIf="showQuiz"
+    (onComplete)="handleOnComplete($event)"
+  ></app-quiz-page>
+  <app-result
+    *ngIf="showResult"
+    [correctAns]="noOfCorrectAns"
+    [totalQuestions]="this.totalQuestions"
+  ></app-result>
+</div>

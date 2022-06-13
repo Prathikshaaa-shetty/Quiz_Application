@@ -1,0 +1,406 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background: grey;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.box {
+  margin: 0 auto;
+  padding-top: 70px;
+}
+.container-1 {
+  width: 512px;
+  height: 639.65px;
+  top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25));
+}
+.container-2 {
+  border-radius: 10px;
+}
+.box-2 {
+  width: 456px;
+  height: 107px;
+  left: 320px;
+  top: 30px;
+  background: #000000;
+  border-radius: 10px;
+}
+.head {
+  width: 441px;
+  height: 82px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 82px;
+  text-align: center;
+  color: grey;
+  border: 2px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container-3 {
+  background: cadetblue;
+  position: absolute;
+  width: 460px;
+  height: 502.65px;
+  left: 175px;
+  top: 167px;
+  margin-top: -58px;
+  margin-left: -178px;
+}
+.icons {
+  width: 148px;
+  height: 148px;
+  left: 502px;
+  top: 175px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.img-1 {
+  width: 120px;
+
+  margin-left: 178px;
+}
+.register {
+  width: 357px;
+  height: 77px;
+  left: 398px;
+  top: 330px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 77px;
+  text-align: right;
+
+  color: #000000;
+}
+
+.container-4 {
+  width: 306px;
+  height: 102px;
+  left: 423px;
+  top: 435px;
+}
+
+.box-3 {
+  width: 306px;
+  height: 102px;
+  left: 423px;
+  top: 435px;
+
+  background: grey;
+  border-radius: 15px;
+  margin-left: 5.9rem;
+}
+
+.enter-name {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  line-height: 51px;
+  text-align: center;
+  color: #000000;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  background: grey;
+  width: 190px;
+  height: 51px;
+  left: 481px;
+  top: 460px;
+}
+
+.start-now {
+  width: 124px;
+  height: 38px;
+
+  margin-left: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 38px;
+  text-align: center;
+  margin-left: 179px;
+  color: #000000;
+}
+.start-now:hover {
+  cursor: pointer;
+  background: grey;
+}
+
+.quiz-page {
+  width: 512px;
+  height: 137px;
+
+  margin-left: -3px;
+}
+.quizQ {
+  width: 712px;
+  height: 137px;
+
+  top: 30px;
+
+  background: #000000;
+  border-radius: 10px;
+}
+.hedQ {
+  width: 441px;
+  height: 82px;
+  top: 27px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 82px;
+  text-align: center;
+  color: grey;
+  border: 2px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*Quizzzz*/
+
+.quiz-container {
+  background-color: cadetblue;
+  border-radius: none;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  width: 600px;
+  overflow: hidden;
+  border: 4px solid black;
+  margin-top: 23px;
+}
+.quiz-header {
+  padding: 4rem;
+  margin-top: 37px;
+}
+h4 {
+  margin-top: -33px;
+}
+h2 {
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 36px;
+}
+ul li {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+ul li label {
+  cursor: pointer;
+}
+
+button {
+  margin-left: 54px;
+  width: 90px;
+}
+button:hover {
+  background-color: grey;
+}
+button:focus {
+  outline: none;
+  background-color: palevioletred;
+}
+.result-text {
+  width: 286px;
+  height: 51px;
+  left: 481px;
+  top: 460px;
+
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 51px;
+
+  text-align: center;
+
+  color: #000000;
+  margin-left: 5.3rem;
+  margin-top: -3rem;
+}
+
+.fn {
+  width: 124px;
+  height: 38px;
+
+  margin-left: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  margin-left: 179px;
+  color: #000000;
+}
+.fn:hover {
+  cursor: pointer;
+  background: grey;
+}
+
+.display {
+  display: none;
+}
+
+/* Media Query*/
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+  .box {
+    /* background-color: #63c971; */
+    color: #000;
+    max-width: 800px;
+    height: 600px;
+  }
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .box {
+    width: 800px;
+    height: 700px;
+    /* background-color: orange; */
+    color: black;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .box {
+    width: 519px;
+    height: 800px;
+    /* background-color: red; */
+    color: black;
+  }
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+  .box {
+    width: 519px;
+    height: 200px;
+    /* background-color: cyan; */
+    color: black;
+  }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+  .box {
+    width: 600px;
+    height: 700px;
+
+    /* background-color: chartreuse; */
+    color: black;
+  }
+  .box .container-1 {
+    width: 646px;
+  }
+  .box .container-1 .container-2 .box-2 {
+    width: 320px;
+    height: 77px;
+  }
+  .box .container-1 .container-2 .head {
+    font-size: 16px;
+    border: none;
+    margin-left: -71px;
+    margin-top: 34px;
+  }
+  .box .container-1 .container-2 .container-3 {
+    width: 316px;
+    height: 420px;
+    left: 182px;
+    top: 136px;
+    border-radius: 10px;
+  }
+  .box .container-1 .container-2 .container-3 .img-1 {
+    width: 89px;
+    margin-left: 102px;
+  }
+  .box .container-1 .container-2 .container-3 .register {
+    width: 217px;
+    height: 72px;
+    font-size: 17px;
+    margin-top: -53px;
+  }
+  .box .container-1 .container-2 .container-3 .container-4 .box-3 {
+    width: 258px;
+    height: 87px;
+
+    background: grey;
+    border-radius: 7px;
+    margin-left: 1.9rem;
+  }
+  .box .container-1 .container-2 .container-3 .container-4 .box-3 .enter-name {
+    width: 153px;
+    height: 29px;
+    margin-top: 24px;
+  }
+  .box .container-1 .container-2 .container-3 .start-now {
+    margin-left: 109px;
+    width: 105px;
+    font-size: 12px;
+  }
+  .sn:hover {
+    cursor: pointer;
+  }
+  .result-text {
+    width: 286px;
+    height: 51px;
+    left: 481px;
+    top: 460px;
+    font-family: Rajdhani;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 51px;
+    text-align: center;
+    color: #000000;
+    margin-left: 1.3rem;
+    margin-top: -3rem;
+  }
+}
+
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .box {
+    width: 700px;
+    height: 400px;
+    /* background-color: brown; */
+    color: black;
+  }
+}
+
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .box {
+    width: 400px;
+    height: 400px;
+    /* background-color: cornflowerblue; */
+    color: black;
+  }
+}
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+  .box {
+    width: 400px;
+    height: 400px;
+    /* background-color: darkgoldenrod; */
+    color: black;
+  }
+}
